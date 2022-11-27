@@ -8,7 +8,7 @@ NodeJS version : 18
 
 How to run:
 -----------
-1.run command "node assignment.js" to run the program
+1.run command "node suzukiKasami.js" to run the program
 2.Enter the no of sites when prompted
 3.The program will start and will print the pids of the sites which are created
 4.Wait for a few seconds, the algorithm will start running
