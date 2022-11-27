@@ -1,0 +1,98 @@
+Enter the total no of sites: 5
+Site S1 is created with pid 25425
+Site S2 is created with pid 25426
+Site S4 is created with pid 25428
+Site S3 is created with pid 25427
+Site S5 is created with pid 25434
+Site S1 is requesting to enter CS
+RN 1 : [1,0,0,0,0]
+RN 2 : [1,0,0,0,0]
+RN 3 : [1,0,0,0,0]
+RN 4 : [1,0,0,0,0]
+RN 5 : [1,0,0,0,0]
+LN [0,0,0,0,0]
+Current Token Holder is S1
+Site S1 has entered the Critical Section
+Site S2 is requesting to enter CS
+RN 1 : [1,1,0,0,0]
+RN 3 : [1,1,0,0,0]
+RN 4 : [1,1,0,0,0]
+RN 5 : [1,1,0,0,0]
+RN 2 : [1,1,0,0,0]
+Request Queue: ["S2"] 
+Site S1 has exited the Critical Section
+Token is passed from site S1  to S2
+LN [1,0,0,0,0]
+Current Token Holder is S2
+Site S2 has entered the Critical Section
+Site S3 is requesting to enter CS
+Request Queue: ["S3"] 
+RN 3 : [1,1,1,0,0]
+RN 2 : [1,1,1,0,0]
+RN 1 : [1,1,1,0,0]
+RN 4 : [1,1,1,0,0]
+RN 5 : [1,1,1,0,0]
+Site S5 is requesting to enter CS
+Request Queue: ["S3","S5"] 
+RN 3 : [1,1,1,0,1]
+RN 2 : [1,1,1,0,1]
+RN 5 : [1,1,1,0,1]
+RN 4 : [1,1,1,0,1]
+RN 1 : [1,1,1,0,1]
+Site S4 is requesting to enter CS
+Request Queue: ["S3","S5","S4"] 
+RN 1 : [1,1,1,1,1]
+RN 2 : [1,1,1,1,1]
+RN 3 : [1,1,1,1,1]
+RN 5 : [1,1,1,1,1]
+RN 4 : [1,1,1,1,1]
+Site S2 has exited the Critical Section
+Token is passed from site S2  to S3
+LN [1,1,0,0,0]
+Current Token Holder is S3
+Site S3 has entered the Critical Section
+Site S1 is requesting to enter CS
+Request Queue: ["S5","S4","S1"] 
+RN 1 : [2,1,1,1,1]
+RN 2 : [2,1,1,1,1]
+RN 4 : [2,1,1,1,1]
+RN 5 : [2,1,1,1,1]
+RN 3 : [2,1,1,1,1]
+Site S3 has exited the Critical Section
+Token is passed from site S3  to S5
+LN [1,1,1,0,0]
+Current Token Holder is S5
+Site S5 has entered the Critical Section
+Site S5 has exited the Critical Section
+Token is passed from site S5  to S4
+LN [1,1,1,0,1]
+Current Token Holder is S4
+Site S4 has entered the Critical Section
+Site S2 is requesting to enter CS
+Request Queue: ["S1","S2"] 
+RN 1 : [2,2,1,1,1]
+RN 2 : [2,2,1,1,1]
+RN 5 : [2,2,1,1,1]
+RN 3 : [2,2,1,1,1]
+RN 4 : [2,2,1,1,1]
+Site S4 has exited the Critical Section
+Token is passed from site S4  to S1
+LN [1,1,1,1,1]
+Current Token Holder is S1
+Site S1 has entered the Critical Section
+Site S3 is requesting to enter CS
+Request Queue: ["S2","S3"] 
+RN 1 : [2,2,2,1,1]
+RN 2 : [2,2,2,1,1]
+RN 4 : [2,2,2,1,1]
+RN 5 : [2,2,2,1,1]
+RN 3 : [2,2,2,1,1]
+Site S5 is requesting to enter CS
+Request Queue: ["S2","S3","S5"] 
+RN 1 : [2,2,2,1,2]
+RN 2 : [2,2,2,1,2]
+RN 4 : [2,2,2,1,2]
+RN 3 : [2,2,2,1,2]
+RN 5 : [2,2,2,1,2]
+Site S1 is requesting to enter CS
+Request Queue: ["S2","S3","S5","S1"] 
